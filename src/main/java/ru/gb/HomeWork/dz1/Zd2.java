@@ -1,5 +1,4 @@
 package ru.gb.HomeWork.dz1;
-
 import java.util.Scanner;
 
 /*
@@ -41,7 +40,6 @@ public class Zd2 {
         int n = scaner.nextInt();
         System.out.print("Введите элемент: ");
         System.out.println("Сумма положительных чисел = " + zadanie2(n, scaner));
-
     }
 
 private static Integer zadanie2(int n, Scanner scaner) {

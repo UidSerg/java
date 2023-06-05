@@ -12,6 +12,7 @@ import java.util.Scanner;
  * Возвращаемая строка должна содержать только один пробел, разделяющий слова.
  * Не включайте никаких дополнительных пробелов.
  */
+
 public class Zd1 {
     public static void main(String[] args) {
         System.out.println("Введите строку");
