@@ -1,6 +1,6 @@
-package ru.gb.HomeWork;
+package ru.gb.HomeWork.dz1;
 
-public class Zd2 {
+public class OLdZd2 {
     public static void main(String[] args) {
         System.out.println("Простые числа от 1 до 1000");
         int n = 1;

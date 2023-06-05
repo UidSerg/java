@@ -1,8 +1,8 @@
-package ru.gb.HomeWork;
+package ru.gb.HomeWork.dz1;
 
 import java.util.Scanner;
 
-public class Zd1 {
+public class OldZd1 {
     public static void main(String[] args) {
         System.out.println("введите число ");
         Scanner scanner = new Scanner(System.in);
