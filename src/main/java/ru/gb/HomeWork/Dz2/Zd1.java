@@ -23,9 +23,9 @@ public class Zd1 {
                 if (value % j == 0) {count++;} //число простое которое делится на 1 и само на себя без остатка
             }
             if (count == 2) {
-                // System.out.println("простое:" + value); //для проверки
+                System.out.println("простое:" + value); //для проверки
                 sum +=value;}
         }
-        System.out.println("Сумма просты чисел = " + sum);
+        System.out.println("Сумма простыx чисел = " + sum);
     }
 }

@@ -24,17 +24,17 @@ public class Vector {
                 ", z=" + z +
                 '}';
     }
-
+//-------------------------------------------------------------------
     /**
-     *
-      * @return длину вектора
+     *Метод  вычисляет длину вектора
+      * @return длина вектора( число )
      */
   public double vectorLength(){
         return sqrt(x*x+y*y+z*z);
   }
-
+//-------------------------------------------------------------------
     /**
-     *
+     * Скалярное произведение двух векторов
      * @param vector2
      * @return скалярное произведение
      */
@@ -42,6 +42,13 @@ public class Vector {
         return x*vector2.x + y*vector2.y + z*vector2.z;
     }
 
+//-------------------------------------------------------------------
+
+    /**
+     * метод, вычисляющий векторное произведение с другим вектором:
+     * @param vector2 с которым происходит взаимодействие
+     * @return
+     */
     public Vector vectorMulti(Vector vector2) {
         return new Vector(
                 y * vector2.z - z * vector2.y,
@@ -50,6 +57,8 @@ public class Vector {
         );
     }
 
+//-------------------------------------------------------------------
+
     /**
      *
      * @param vector2 с которым происходит взаимодействие
@@ -57,6 +66,31 @@ public class Vector {
      */
     public double vectorCos(Vector vector2) {
         return this.scalarMulti(vector2)/(this.vectorLength()*vector2.vectorLength());
-
     }
+
+//-------------------------------------------------------------------
+    /**
+     * Метод  считает сумму векторов
+     * @param vector2 прибавляемый вектор
+     * @return новый вектор
+     */
+    public Vector vectorSum(Vector vector2) {
+        return new Vector(x+vector2.x,
+                y+vector2.y,
+                z+vector2.z
+        );
+    }
+//-------------------------------------------------------------------
+    /**
+     * Метод  считает Разность векторов
+     * @param vector2 вычитаемый вектор
+     * @return новый вектор
+     */
+    public Vector vectorRazn(Vector vector2) {
+        return new Vector(x-vector2.x,
+                y-vector2.y,
+                z-vector2.z
+        );
+    }
+
 }

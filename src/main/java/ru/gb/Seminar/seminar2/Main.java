@@ -10,10 +10,13 @@ public class Main {
         vector.z=3;
         */
 
-        System.out.println(vector2.vectorLength());
-        System.out.println(vector1.scalarMulti(vector2));
-        System.out.println(vector1.vectorMulti(vector2));
-        vector1.vectorCos(vector2);
-        System.out.println(vector1);
+        System.out.println("Вектор 1 = " + vector1);
+        System.out.println("Вектор 2 = " + vector2);
+        System.out.println("Длина вектора vector2 = " + vector2.vectorLength());
+        System.out.println("скалярное произведение vector1 и vector2 = " +vector1.scalarMulti(vector2));
+        System.out.println("Векторное произведение vector1 и vector2 = " +vector1.vectorMulti(vector2));
+        System.out.println("Угол между векторами vector1 и vector2 = " +vector1.vectorCos(vector2));
+        System.out.println("Сумма векторов vector1 и vector2 = " + vector1.vectorSum(vector2));
+        System.out.println("Разность векторов vector1 и vector2 = " + vector1.vectorRazn(vector2));
     }
 }
