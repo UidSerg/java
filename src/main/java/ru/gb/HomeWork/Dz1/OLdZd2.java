@@ -1,4 +1,4 @@
-package ru.gb.HomeWork.dz1;
+package ru.gb.HomeWork.Dz1;
 
 public class OLdZd2 {
     public static void main(String[] args) {

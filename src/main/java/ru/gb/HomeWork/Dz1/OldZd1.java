@@ -1,4 +1,4 @@
-package ru.gb.HomeWork.dz1;
+package ru.gb.HomeWork.Dz1;
 
 import java.util.Scanner;
 
