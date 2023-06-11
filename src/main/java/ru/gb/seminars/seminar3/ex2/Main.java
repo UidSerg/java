@@ -17,7 +17,7 @@ public class Main {
         students.add(study2);
         students.add(study3);
         for (Study student : students) {
-            int sum = sumScars(student.getScores());
+            int sum = sumScores(student.getScores());
             if (student.getName().endsWith("ова") && sum % 2 == 0) {
                 System.out.println("student = " + student.getSalary());
             }
@@ -25,7 +25,7 @@ public class Main {
         }
     }
 
-    private static int sumScars(List<Integer> scores) {
+    private static int sumScores(List<Integer> scores) {
         int sum = 0;
         for (Integer score : scores) {
             sum += score;
