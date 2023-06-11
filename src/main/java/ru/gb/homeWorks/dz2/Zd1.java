@@ -1,4 +1,4 @@
-package ru.gb.HomeWork.Dz2;
+package ru.gb.homeWorks.dz2;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -19,10 +19,10 @@ public class Zd1 {
             int value = rnd.nextInt(100);
             System.out.println(value);
             int count = 0;
-            for (int j = 1; j <= value; j++) {
-                if (value % j == 0) {count++;} //число простое которое делится на 1 и само на себя без остатка
+            for (int j = 1; j < Math.sqrt(value); j++) {
+                if (value % j == 0) { count++;}
             }
-            if (count == 2) {
+            if (count == 1) {
                 System.out.println("простое:" + value); //для проверки
                 sum +=value;}
         }

@@ -1,4 +1,4 @@
-package ru.gb.Seminar.seminar1;
+package ru.gb.seminars.seminar1;
 /*
 * psvm - мэин функция
 * sout - вывод

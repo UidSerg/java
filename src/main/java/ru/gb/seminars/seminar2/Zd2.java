@@ -1,4 +1,4 @@
-package ru.gb.Seminar.seminar2;
+package ru.gb.seminars.seminar2;
 import java.util.Scanner;
 /*
 * Задан массив .
@@ -6,7 +6,7 @@ import java.util.Scanner;
 *  .numsrunningSum[i] = sum(nums[0]…nums[i])
 * Возвращает промежуточную сумму .nums
 * */
-public class zd2 {
+public class Zd2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите длинну массива");

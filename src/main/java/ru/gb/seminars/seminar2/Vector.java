@@ -1,4 +1,4 @@
-package ru.gb.Seminar.seminar2;
+package ru.gb.seminars.seminar2;
 
 import static java.lang.Math.sqrt;
 

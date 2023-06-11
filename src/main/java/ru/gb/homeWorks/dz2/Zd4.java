@@ -1,4 +1,4 @@
-package ru.gb.HomeWork.Dz2;
+package ru.gb.homeWorks.dz2;
 /*4)(*) Отвалидировать доску судоку
 /*Требования
         Объявлена доска 9 x 9 необходимо отвалидировать в соответствии с правилами
@@ -26,7 +26,7 @@ package ru.gb.HomeWork.Dz2;
         System.out.println("Validete:" + isValidSudoku(board));  }
     */
 public class Zd4 {
-   /* public static void main(String[] args) {
+    public static void main(String[] args) {
         char[][] board = {
                 {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
                 {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
@@ -38,10 +38,27 @@ public class Zd4 {
                 {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
 
-        System.out.println("Validete:" + isValidSudoku(board));  }
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[0].length; j++) {
+                System.out.print(board[i][j]);
 
-    private static String isValidSudoku(char[][] board) {
-    }*/
+            }
+            System.out.println();
+
+            //System.out.println("Validete:" + isValidSudoku(board));
+
+        }
+
+   /* private static String isValidSudoku(char[][] board) {
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[0].length; j++) {
+                   System.out.println(board[i][j]);
+                }
+            }
+
+    return "yes";
+        }*/
+    }
 
 }
 

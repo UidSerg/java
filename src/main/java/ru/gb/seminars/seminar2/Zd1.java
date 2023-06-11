@@ -1,8 +1,8 @@
-package ru.gb.Seminar.seminar2;
+package ru.gb.seminars.seminar2;
 /*
 * Дан массив целых чисел. Верно ли, что массив является симметричным.
 * */
-public class zd1 {
+public class Zd1 {
     public static void main(String[] args) {
         int[] array = {2, 6, 5, 8, 5, 4, 2};
         System.out.println(palindrom(array));
