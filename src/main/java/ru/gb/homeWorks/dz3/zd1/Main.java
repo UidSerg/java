@@ -27,7 +27,7 @@ public class Main {
         System.out.println("tovarList = " + tovarList);
         double maxPrise = 0;
         for (DataBase dataBase : tovarList) {
-            if (dataBase.getName().contains("Высший") == true && dataBase.getSort() == 1 | dataBase.getSort() == 2) {
+            if (dataBase.getName().toLowerCase().contains("высший") == true && dataBase.getSort() == 1 | dataBase.getSort() == 2) {
                 if (dataBase.getPrice() > maxPrise) {
                     maxPrise = dataBase.getPrice();
                 }
