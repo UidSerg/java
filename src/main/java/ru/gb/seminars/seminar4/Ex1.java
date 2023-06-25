@@ -1,5 +1,8 @@
 package ru.gb.seminars.seminar4;
-/*
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
 public class Ex1 {
     public static void main(String[] args) {
         LinkedList<Integer> linkedList = new LinkedList<>();
@@ -26,4 +29,3 @@ public class Ex1 {
         System.out.println("linkedList.contains(3) = " + linkedList.contains(3));
     }
 }
-*/
