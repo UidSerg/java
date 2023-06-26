@@ -6,10 +6,7 @@ package ru.gb.homeWorks.dz4;
 Вывод:
 4->3->2->1
  */
-import java.util.Collections;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Zd1 {
     public static void main(String[] args) {
@@ -25,7 +22,7 @@ public class Zd1 {
         while (deque.size() >0){
             System.out.print(deque.pollLast() + " ");
         }
-    sc.close();
+        sc.close();
     }
 
 }
