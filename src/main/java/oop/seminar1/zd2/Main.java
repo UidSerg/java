@@ -21,7 +21,9 @@ public class Main {
         SafeAccount safe = new SafeAccount("Ivan Ivanov", 123451, 1000, 5.0);
         System.out.println("credit.getBalance() = " + credit.getBalance());
         credit.calcInterest();
+        System.out.println("credit.getBalance() = " + credit.getBalance());
         System.out.println("safe.getBalance() = " + safe.getBalance());
         safe.addInterest();
+        System.out.println("safe.getBalance() = " + safe.getBalance());
     }
 }
