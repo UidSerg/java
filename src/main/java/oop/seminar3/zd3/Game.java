@@ -1,7 +1,14 @@
 package oop.seminar3.zd3;
 
-public interface Game {
-      void start(int lengthWord, int countTry);
-      Answer inputValue(String value);
-      GameStatus getGameStatus();
+import java.util.List;
+
+public interface Game
+{
+      void start (int wordLength, int attempts);
+
+      Answer inputValue (String input);
+
+      GameStatus getGameStatus ();
+      void getLogs();
+
 }

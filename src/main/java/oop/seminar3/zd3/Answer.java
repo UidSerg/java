@@ -1,28 +1,33 @@
 package oop.seminar3.zd3;
 
-public class Answer {
+public class Answer
+{
     private int bulls;
-    private int rows;
+    private int cows;
 
-    public Answer(int bulls, int rows) {
+    public Answer ()
+    {
+    }
+
+    public Answer (int bulls, int cows)
+    {
         this.bulls = bulls;
-        this.rows = rows;
-    }
-
-    public Answer() {
-    }
-
-    public int getBulls() {
-        return bulls;
-    }
-
-    public int getRows() {
-        return rows;
+        this.cows = cows;
     }
 
     @Override
-    public String toString() {
-        return "Быки=" + bulls +
-                ", коровы=" + rows;
+    public String toString ()
+    {
+        return "быки = " + bulls + ", коровы = " + cows;
+    }
+
+    public int getBulls ()
+    {
+        return bulls;
+    }
+
+    public int getCows ()
+    {
+        return cows;
     }
 }
