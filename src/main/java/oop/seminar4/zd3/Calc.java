@@ -19,11 +19,34 @@ public class Calc {
         }
         return  proizv;
     }
+//Zd2
     public double dell(Element<? extends Number> delimoe, Element<? extends Number> delitel){
         double rezult = 0.0;
         if(delitel.getObj().doubleValue() == 0.0) return 0;
         rezult = delimoe.getObj().doubleValue()/delitel.getObj().doubleValue();
         return  rezult;
+    }
+//Zd3
+    public String inBinary(String strNum){
+        double number = Double.parseDouble(strNum);
+        int leftNum = (int) number;
+        double rightNum = number % leftNum;
+        int count = 0;
+        for (String s : strNum.split("")) {
+            if (s.charAt(0) == '.'){
+                count++;
+            }
+        }
+        if (count == 0) {
+            return Integer.toBinaryString(leftNum);
+        } else {
+            if (rightNum == 0){
+                return Integer.toBinaryString(leftNum);
+            }else {
+                return Integer.toBinaryString(leftNum) + "," +
+                        Long.toBinaryString(Double.doubleToRawLongBits(rightNum));
+            }
+        }
     }
 }
 
