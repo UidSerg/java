@@ -53,7 +53,19 @@ public class Calc {
     }
 
     public Complex sum(Complex comp1, Complex comp2) {
-        Complex rez = new Complex(comp1.ox+comp2.ox,comp1.oy+comp2.oy);
+        Complex rez = new Complex(comp1.getOx()+comp2.getOx(),comp1.getOy()+comp2.getOy());
+        return rez;
+    }
+    public Complex proizv(Complex comp1, Complex comp2) {
+        Complex rez = new Complex(comp1.getOx()*comp2.getOx(),comp1.getOy()*comp2.getOy());
+        return rez;
+    }
+    public Complex dell(Complex comp1, Complex comp2) {
+        if(comp2.getOx() == 0.0 | comp2.getOy() == 0.0){
+            Complex rez = new Complex(0.0,0.0);
+            return rez;
+        }
+        Complex rez = new Complex(comp1.getOx()/comp2.getOx(),comp1.getOy()/comp2.getOy());
         return rez;
     }
 }

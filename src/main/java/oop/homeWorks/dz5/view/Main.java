@@ -1,15 +1,12 @@
 package oop.homeWorks.dz5.view;
-
+//приципа барборы  лисков нет тюк нет родительских классов и классов наслединков
 
 import oop.homeWorks.dz5.controller.Calc;
 import oop.homeWorks.dz5.data.Complex;
 import oop.homeWorks.dz5.data.Element;
-import oop.homeWorks.dz5.data.Rational;
-
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -25,36 +22,45 @@ public class Main {
             while (cas != 0) {
                 switch (cas) {
                     case 1:
-                        List<Double> rats = new ArrayList<>();
-                        System.out.println("введите числа для сложения:");
-                        int stop = 9;
-                        while (stop != 0) {
-                            double value = scanner.nextDouble();
-                            System.out.println("value = " + value);
+                        List<Double> rats = new ArrayList<>(); //прицип инверсии зависимостей List и arraylist
+                        System.out.println("введите числа для сложения(= - результат:");
+                        String stop = "0";
+                        while (stop.equals("=") !=true) {
+                            double value = Double.parseDouble(stop);
+                            //System.out.println("value = " + value);
                             rats.add(value);
-                            stop = scanner.nextInt();
+                            stop = scanner.nextLine();
                         }
-
                         System.out.println("calc = " + calc.sum(rats));
                         break;
 
                     case 2:
-                        System.out.println("введите ox1 числа для сложения:");
-                        double ox1 = scanner.nextDouble();
-                        System.out.println("введите oy1 числа для сложения:");
-                        double oy1 = scanner.nextDouble();
-                        System.out.println("введите ox1 числа для сложения:");
-                        double ox2 = scanner.nextDouble();
-                        System.out.println("введите oy1 числа для сложения:");
-                        double oy2 = scanner.nextDouble();
-                        Complex comp1 = new Complex(ox1,oy1);
-                        Complex comp2 = new Complex(ox2,oy2);
-                        System.out.println("calc.sum(comp1,comp2) = " + calc.sum(comp1, comp2));
 
+                            System.out.println("введите ox1 числа для сложения:");
+                            double ox1 = scanner.nextDouble();
+                            System.out.println("введите oy1 числа для сложения:");
+                            double oy1 = scanner.nextDouble();
+                            System.out.println("введите ox1 числа для сложения:");
+                            double ox2 = scanner.nextDouble();
+                            System.out.println("введите oy1 числа для сложения:");
+                            double oy2 = scanner.nextDouble();
+                            Complex comp1 = new Complex(ox1, oy1);
+                            Complex comp2 = new Complex(ox2, oy2);
+                        String operation = "0";
+                        while (operation.equals("=") !=true) {
+                                if (operation.equals("+")) {
+                                    System.out.println("сумма комплексных чисел = " + calc.sum(comp1, comp2));
+                                }
+                                if (operation.equals("*")) {
+                                    System.out.println("произведение комплексных чисел = " + calc.proizv(comp1, comp2));
+                                }
+                                if (operation.equals("/")) {
+                                    System.out.println("частное комплексных чисел = " + calc.dell(comp1, comp2));
+                                }
+                                operation = scanner.nextLine();
+                            }
                         break;
-
                     case 3:
-
                         List<Integer> listInt = new ArrayList<>();
                         List<Double> listDobl = new ArrayList<>();
                         List<Number> listNum = new ArrayList<>();
