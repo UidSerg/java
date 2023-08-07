@@ -16,7 +16,6 @@ public class Main {
     public static void main(String[] args){
         Data_add();
         }
-
     public static void Data_add(){
         Boolean flag = false;
         while (flag == false) {
@@ -81,4 +80,6 @@ public class Main {
             return false;
         }
     }
+
 }
+
